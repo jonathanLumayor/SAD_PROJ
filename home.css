@@ -1,0 +1,246 @@
+.sect1{
+    padding-top: 50px;
+    height: 700px;
+}
+
+body {
+    margin: 0;
+    background-color: lightgoldenrodyellow;
+    font-family: Georgia, 'Georgia', Times, serif;
+    
+}
+
+.baby {
+    margin: 0;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.baby img {
+    border-radius: 100px;
+    width: 80px;
+    height: 50px;
+}
+.baby h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    background-color: pink;
+    padding: 10px 20px;
+    width: 97%; 
+    align-items: center;
+    justify-content: space-between;
+    height: 40px; 
+    border-bottom: 1px solid black;
+    position: sticky; 
+    top: 0; 
+    z-index: 10000;
+    
+}
+
+.nav h1 {
+    font-size: 1.5em;
+    font-family: georgia;
+}
+
+.nav p {
+    margin: 0;
+    display: inline-block;
+    margin-left: 30px;
+    border-radius: 50px;
+    padding: 10px 15px;
+    color: black;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+
+.about {
+    color: black;
+    border-radius: 50px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;    
+    cursor: pointer;
+    border: 1px black;
+    border-style: solid;
+}
+
+.nav-links a:hover{
+    color:white;
+    background-color: black;
+}
+
+.nav-links a {
+    color: black;
+    transition: 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    
+}
+
+@keyframes fadeInFromLeft {
+    from {
+        opacity: 1;
+        transform: translateX(-50px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    padding: 40px 50px;
+    
+}
+
+.image .textcont {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    animation: fadeInFromLeft 1s ease-out;
+}
+
+
+.image .textcont p {
+    font-size: 1.5em;
+    margin: 0; 
+    animation: fadeInFromLeft 1s ease-out 2s;
+}
+
+.image .textcont h1 {
+    font-family: Georgia;
+    font-size: 3em;
+    margin: 0; 
+    animation: fadeInFromLeft 3s ease-out; 
+}
+
+.image img {
+    width: 500px;
+    border-radius: 70px;
+    border: 1px solid black;
+    transition: transform 0.5s ease, border-radius 0.5s ease;
+
+}
+
+.image img:hover {
+    transform: scale(0.5) translateX(0%); 
+    border-radius: 70px;
+}
+
+.image p {
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+
+/*Section 2*/
+
+
+.sect2{
+    padding-top: 60px;
+    height: 700px;
+}
+.sect2 p{
+    font-size: 2em;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 40px;
+    width: 1050px;
+    height: 450px;
+    background-color: pink;
+    border: 2px solid black;
+}
+
+
+.column1, .column2 {
+    width: 50%;                  
+    padding: 20px;
+    box-sizing: border-box;     
+    border-radius: 40px;
+    position: left;
+}
+
+.column1 p {
+    text-align: justify;
+    font-size: 1em;
+}
+.chapt {
+    font-weight: bold;
+}
+
+
+.column2 p {
+    text-align: left;
+    
+    font-size: 1em;
+}
+/*Section 3*/
+
+.sect3 p{
+    font-size: 2em;
+    text-align: center;
+}
+.sect3{
+    margin-top: 0;
+    padding-top: 10px;
+    height: 220px;
+    background-color: rgb(255, 255, 255);
+    border-top: 2px solid black;
+}
+
+.conts {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    top: 0; 
+    z-index: 10000;
+    text-align: center;
+    font-size: 1em;
+    width: 100%; 
+}
+
+.cona {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Adjust spacing between items */
+}
+
+.cona a {
+    margin: 0;
+    font-size: 1em;
+    text-decoration: none; /* Remove underline */
+    color: black; /* Adjust color as needed */
+    display: flex; /* Ensure proper alignment with images */
+    align-items: center; /* Center text vertically with the image */
+}
+
+.cona img {
+    background: transparent;
+    display: block; /* Use block to avoid extra space below images */
+    width: 30px;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.cona p {
+    margin: 0;
+    font-size: 1em; /* Ensure font size consistency */
+}
